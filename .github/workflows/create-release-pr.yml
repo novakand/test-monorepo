@@ -9,8 +9,7 @@ on:
 jobs:
   createPullRequest:
     if: |
-      github.event_name == 'master' &&
-      (github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'OWNER') &&
+      true
       startsWith(github.event.comment.body, '/create release')
     runs-on: ubuntu-latest
     steps:
