@@ -1,7 +1,8 @@
 name: Create Pull Request
 on:
-  issue_comment:
-    types: [created]
+   push:
+     branches:
+     - master
 
 # require public member
 # private member is treated as CONTRIBUTOR
